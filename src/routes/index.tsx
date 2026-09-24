@@ -154,7 +154,7 @@ function FitLifePage() {
               <h2>Wellness is a whole-life practice.</h2>
             </div>
             <div className="category-list">
-              {[
+              {([
                 ["01", "Move", "Build strength and freedom in your body."],
                 ["02", "Nourish", "Eat with colour, pleasure, and ease."],
                 ["03", "Restore", "Make room for rest and quiet."],
