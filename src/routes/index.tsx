@@ -10,7 +10,6 @@ import {
   Moon,
   MoveRight,
   Quote,
-  Sparkles,
   Sun,
   X,
 } from "lucide-react";
@@ -160,7 +159,7 @@ function FitLifePage() {
                 ["02", "Nourish", "Eat with colour, pleasure, and ease."],
                 ["03", "Restore", "Make room for rest and quiet."],
                 ["04", "Connect", "Grow the relationships that hold you."],
-              ].map(([number, name, text]) => (
+              ] as const).map(([number, name, text]) => (
                 <a href={`#${name.toLowerCase()}`} className="category-row" key={name}>
                   <span>{number}</span><strong>{name}</strong><p>{text}</p><ArrowRight aria-hidden="true" />
                 </a>
